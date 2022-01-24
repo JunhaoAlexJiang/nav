@@ -1,0 +1,144 @@
+/* css reset  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*::after {
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+.icon {
+  width: 90px;
+  height: 90px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.iconClose {
+  width: 30px;
+  height: 30px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (min-width: 500px) {
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+  li:hover > .site > .close {
+    display: block;
+  }
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* mainStyle */
+body {
+  background: #eee;
+}
+
+.search {
+  margin: 48px 18px 34px 18px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .search {
+    margin: 48px 18px 34px 18px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.search > input {
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 0px 10px;
+}
+.search > button {
+  white-space: nowrap;
+  width: 87px;
+  height: 41px;
+  background: #74a0f5;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.globalMain {
+  max-width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 500px) {
+  .globalMain {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.siteList {
+  margin: 0px 18px;
+}
+.x {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -34px;
+}
+.x > li {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 34px;
+  margin-right: 34px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.site > .logo {
+  font-size: 72px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+}
+.site > .link {
+  font-size: 18px;
+}
